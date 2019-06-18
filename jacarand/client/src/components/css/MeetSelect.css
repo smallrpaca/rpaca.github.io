@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+
+.MeetSelect {
+    display: flex;
+    flex-direction: column;
+}
+
+.MeetSelect .MeetText {
+    text-decoration: none;
+    position: absolute;
+    left:5px;
+    display: flex;
+}
+
+.MeetSelect .MeetVoice {
+    text-decoration: none;
+    position: absolute;
+    top: 43%;
+    left: 5px;
+    display: flex;
+}
+
+.MeetSelect div {
+    /* text-align: center; */
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 50px;
+    font-family: 'Sigmar One', cursive;
+}
+
+.MeetSelect .MeetText, .MeetVoice {
+    width: 45%;
+    height: 30%;
+    background-color: rgba(94, 93, 93, 0.39);
+    margin: 10px auto 10px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.774);
+}

@@ -1,0 +1,61 @@
+.GenderList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.479);
+    z-index: 5;
+    cursor: default;
+}
+
+.GenderList .main {
+    position: absolute;
+    color: black;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    border-radius: 20px;
+    background: rgb(231, 231, 231);
+}
+
+.GenderList .main .close {
+    margin: 10px;
+    text-align: center;
+    height: 10%;
+    border-radius: 50px;
+    background: rgba(107, 107, 107, 0.514);
+    transition: all 1.5s;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.GenderList .main .close:hover {
+    color: #FFFFFF;
+    background: black;
+}
+
+.GenderList .select {
+    /* border: 2px solid black; */
+    text-align: center;
+    margin: 5rem;
+}
+
+.GenderList .main label {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 150%;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.GenderList .main input {
+    display: none;
+}
+
+.GenderList input:checked + label {
+    background: black;
+    color: whitesmoke;
+}
