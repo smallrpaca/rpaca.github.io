@@ -67,7 +67,7 @@
 
 The MIT License (MIT)
 
-Copyright (c) <2019> <Ulrim>
+Copyright (c) 2019 Ulrim
   
 이 문서에 기하여, 이 소프트웨어와, 이와 연관된 모든 문서(이하 ‘소프트웨어’라 한다)의 복제본을 보유하게 되는 모든 사용자에 대하여, 다음의 권한이 무상으로 부여된다. 소프트웨어의 사용, 복제, 변경, 통합, 발행, 배포, 재실시, 판매에 대한 제약을 포함한 어떠한 제약 없이 본 소프트웨어를 취급할 수 있으며, 이는 제3자에 대한 소프트웨어 지급시에도 동일하게 적용된다. 단, 이 모든 사항은 아래의 조건하에 적용된다. <br />
 
@@ -77,7 +77,7 @@ Copyright (c) <2019> <Ulrim>
 
 The MIT License (MIT)
 
-Copyright (c) <2019> <Ulrim>
+Copyright (c) 2019 Ulrim
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: <br />
 
