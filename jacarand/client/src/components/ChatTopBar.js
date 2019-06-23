@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './css/ChatTopBar.css';
+// import './css/ChatTopBar.css';
 import HistoryItem from './sub/HistoryItem';
 import { observer, inject } from 'mobx-react';
 
@@ -45,23 +45,6 @@ class ChatTopBar extends Component {
                         <h3>history</h3>
                     </div>      
                     <div className="desc">
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
-                        <HistoryItem />
                         <HistoryItem />
                     </div>
                     <div className="other">

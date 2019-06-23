@@ -1,32 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
 
 .MeetBar {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 45%;
+    height: auto;
     display: flex;
+    border-radius: 20px;
     flex-direction: column;
     font-family: 'Sigmar One', cursive;
+    background: rgba(0, 0, 255, 0.158);
 }
 
-.MeetBar .WishGender, .Interest {
-    font-size: 1.1rem;
-    margin: 25px;
-    width: 40%;
-    height: 70px;
+.MeetBar .SetNickName {
+    font-size: 20px;
     text-align: center;
-    line-height: 4rem;
-    flex-grow: 1;
-    color: rgba(255, 255, 255, 0.877);
-    background-color: rgba(94, 93, 93, 0.39);
-    box-shadow: 5px 5px rgba(128, 128, 128, 0.774);
+    margin: 10px;
+}
+
+.MeetBar .SetNickName input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.MeetBar .SetNickName input[type="text"]:focus {
+    border: 3px solid rgba(80, 80, 236, 0.815);
+}
+
+.MeetBar .Gender {
+    font-size: 20px;
+    text-align: center;
+}
+
+.MeetBar .Gender input {
+    display: none;
+}
+
+.MeetBar .Gender label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    background: white;
     cursor: pointer;
+    transition: 1.5s all;
+}
+
+.MeetBar .Gender #FemaleInput:checked~ .GenderLabel01 {
+    background: rgba(0, 0, 0, 0.705);
+    border: none;
+    color: white;
+}
+
+.MeetBar .Gender #MaleInput:checked~ .GenderLabel02 {
+    background: rgba(0, 0, 0, 0.705);
+    border: none;
+    color: white;
 }
 
 .MeetBar .WishGender {
-    position: absolute;
-    left: 50%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.MeetBar .Interest {
-    position: absolute;
-    left: 50%;
-    top: 25%;
+.MeetBar .WishGender input {
+    display: none;
+}
+
+.MeetBar .WishGender label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: 1.5s all;
+}
+
+.MeetBar .WishGender #wishFemaleInput:checked~ .wishGenderLabel01 {
+    background: rgba(0, 0, 0, 0.705);
+    border: none;
+    color: white;
+}
+
+.MeetBar .WishGender #wishMaleInput:checked~ .wishGenderLabel02 {
+    background: rgba(0, 0, 0, 0.705);
+    border: none;
+    color: white;
 }

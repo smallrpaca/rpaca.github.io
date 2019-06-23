@@ -1,38 +1,31 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './css/TopBar.css';
 import { observer, inject } from 'mobx-react';
 import { observable } from 'mobx';
-import Login from '../pages/Login';
+// import Login from '../pages/Login';
 
-@inject('onoff')
+@inject('states')
 @observer
 class TopBar extends Component {
     render() {
-        const { onoff } = this.props;
-        const Child = ({ match }) => {
-            return (
-                <>
-                    {match.params.id}
-                </>
-            );
-        };
+        const { states } = this.props;
 
         return (
         <div className="TopBar">
             <ul>
-                <li className="TopIng">
-                    <Route path="/:id" component={Child} />
-                </li>
                 <li className="TopName">
-                    Hi! Id
+                    Hi! {states.user.nickname}
                 </li>
-                <li 
+                <li>
+                    My gender : {states.user.gender}
+                </li>
+                {/* <li 
                     className="TopLogin"
                     onClick={onoff.OnOff}
                 >
                     Login
-                </li>
+                </li> */}
                 <Link to="/setting">
                     <li className="TopSet">
                         Set
@@ -40,7 +33,7 @@ class TopBar extends Component {
                 </Link>
             </ul>
             <div>
-                {onoff.value && <Login />}
+                {/* {onoff.value && <Login />} */}
             </div>
         </div>
         );

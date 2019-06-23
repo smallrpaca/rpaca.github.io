@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Socket from '../../components/Socket';
-
-// const socket = Socket();
 
 const MeetVideo = () => {
     return (

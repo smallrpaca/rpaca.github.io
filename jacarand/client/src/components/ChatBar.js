@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
-import './css/ChatBar.css';
+// import './css/ChatBar.css';
 import Socket from './Socket';
 
-const socket = Socket();
-
-@inject('state')
+@inject('states')
 @observer
 class ChatBar extends Component {
-    // 서버에 이름과 메시지 전송 --- (※3)
+    constructor(props){
+        super(props);
+        this.state = {
+            socket: Socket('/'), // set namespace
+        }
+    }
     send (e) {
         e.preventDefault();
+        const { socket } = this.state;
+        const { user, message, setMessage } = this.props.states;
 
-        socket.emit('message', {
-          name: this.props.state.user,
-          message: this.props.state.message
+        socket.emit('ChatSend', {
+            id: user.id,
+            nickname: user.nickname,
+            gender: user.gender,
+            msg: message,
+            roomName: this.props.roomName
         })
-        this.props.state.setMessage(''); // 입력 양식을 비웁니다.
+        setMessage(''); // 입력 양식을 비웁니다.
+        console.log('룸 네임 : ',this.props.roomName);
     }
 
     render() {
-        const { state } = this.props;
+        const { states } = this.props;
 
         return (
             <div className="ChatBar">
@@ -31,8 +40,8 @@ class ChatBar extends Component {
                 >
                     <input
                     className="MsgInput"
-                    value={state.message}
-                    onChange={e => state.setMessage(e.target.value)} 
+                    defaultValue={states.message}
+                    onChange={e => states.setMessage(e.target.value)} 
                     placeholder="send message"
                     />
                 </form>

@@ -10,16 +10,24 @@ class GenderList extends Component {
         const { onoff } = this.props;
         return (
         <div className="GenderList">
-            <div className="main">
-                <div className="close" onClick={onoff.genderOnOff}>
-                    <div>close</div>
+                <div>
+                    WishGender
                 </div>
+            <div className="main">
                 <div className="select">
-                    <input type="checkbox" id="female" className="female" checked={onoff.genderFemaleValue}/>
+                    <input type="radio" 
+                        name="wishGender"
+                        id="female" 
+                        className="female" 
+                    />
                     <label htmlFor="female" onClick={onoff.genderFemaleOnOff}>Female</label>
                 </div>
                 <div className="select">
-                    <input type="checkbox" id="male" className="male" checked={onoff.genderMaleValue}/>
+                    <input type="radio"
+                        name="wishGender" 
+                        id="male" 
+                        className="male" 
+                    />
                     <label htmlFor="male" onClick={onoff.genderMaleOnOff}>male</label>
                 </div>
             </div>

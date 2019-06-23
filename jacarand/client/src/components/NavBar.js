@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <div className="NavBar">
             <ul>
-                <Link to="/meet">
+                {/* <Link to="/meet">
                     <li>
                         Meet
                     </li>
@@ -20,7 +20,7 @@ const NavBar = () => {
                     <li>
                         My Room
                     </li>
-                </Link>
+                </Link> */}
                 <Link to="/OpenRoom">
                     <li>
                         Open Room
