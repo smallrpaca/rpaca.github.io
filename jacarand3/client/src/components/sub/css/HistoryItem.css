@@ -1,0 +1,18 @@
+.HistoryItem {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background: blanchedalmond;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.HistoryItem div {
+    align-self: center;
+}
+.HistoryItem .name {
+    width: 300px;
+}
+.HistoryItem .plus, .dec {
+    width: 50px;
+}
