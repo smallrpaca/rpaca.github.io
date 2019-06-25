@@ -1,0 +1,24 @@
+.Setting {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.Setting .exit {
+    height: 50px;
+    /* border: 2px solid black; */
+    transition: 0.5s all;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+
+.Setting .exit:hover {
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 0 0 20px 20px;
+}
+
+.Setting .exit img {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

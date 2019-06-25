@@ -1,0 +1,89 @@
+.Profile {
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+}
+
+.Profile a {
+    text-decoration: none;
+    color: black;
+}
+
+.Profile .Close {
+    margin: 10px;
+    text-align: center;
+    height: 5%;
+    border-radius: 50px;
+    background: rgba(107, 107, 107, 0.514);
+    transition: all 1.5s;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.Profile .Close:hover {
+    color: #FFFFFF;
+    background: black;
+}
+
+.Profile .PfImg {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.Profile .PfName {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 300px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.Profile .PfDesc {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 70%;
+    height: 15%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.Profile .Talk{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+}
+
+.Profile .Talk a {
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 30px;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+.Profile .Talk a:hover {
+    background: rgb(48, 48, 48);
+    color: #FFFFFF;
+}
+

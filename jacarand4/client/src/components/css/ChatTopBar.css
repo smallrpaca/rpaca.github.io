@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+
+.ChatTopBar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.349);
+    border-radius: 0 0 10px 10px;
+    z-index: 2000;
+    font-family: 'Sigmar One', cursive;
+}
+
+.ChatTopBar .roomOut, .name, .menu {
+    align-self: center;
+    text-align: center;
+}
+
+.ChatTopBar .roomOut {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.ChatTopBar .roomOut a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .ChatTopBar .menu {
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.ChatTopBar .history {
+    position: absolute;
+    border-left: 3px solid rgba(0, 0, 0, 0.349);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.349);
+    border-radius: 0 30px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+}
+
+.ChatTopBar .history .title {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 60px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.349);
+    background: white;
+}
+
+.ChatTopBar .history .title small, h3 {
+    align-self: center;
+}
+.ChatTopBar .history .title small {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ChatTopBar .history .title h3 {
+    text-align: center;
+    margin-right: auto;
+}
+
+.ChatTopBar .history .desc {
+    width: 100%;
+    height: 80%;
+    background: white;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.ChatTopBar .history .other {
+    width: 100%;
+    line-height: 45px;
+} */
