@@ -1,0 +1,45 @@
+@import "component.scss";
+
+.NavBar {
+    @include google_font;
+    @include position(fixed, $bottom: 0, $left: 0);
+    @include box_size(100%, 50px);
+    background: rgb(255, 255, 255);
+    border-top: 3px solid rgba(0, 0, 0, 0.349);
+    border-radius: 10px 10px 0 0;
+    z-index: 2000;
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        .opentalk {
+            @include margin($top: 5px, $right: auto, $left: auto);
+            height: 30px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a {
+            @include margin($top: 5px, $right: auto, $left: auto);
+            height: 30px;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: rgb(170, 201, 230);
+                cursor: pointer;
+            }
+        }
+
+        .Now {
+            @include margin($top: 15px, $right: auto, $left: auto);
+            height: 30px;
+            color: black;
+        }
+    }
+}
+
