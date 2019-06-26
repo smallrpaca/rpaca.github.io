@@ -1,0 +1,35 @@
+.OpenRoomItem {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* background: rgba(230, 230, 230, 0.479); */
+    background: white;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.OpenRoomItem .OpenRoomDesc {
+    align-self: center;
+    flex-grow: 3;
+    overflow: hidden;
+    width: 100px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.OpenRoomItem .OpenRoomDesc .name {
+    text-align: center;
+}
+
+.OpenRoomItem .OpenRoomDesc .tag {
+    text-align: center;
+}
+
+
+.OpenRoomItem .OpenRoomPer {
+    margin-right: 5px;
+    align-self: center;
+    text-align: center;
+}

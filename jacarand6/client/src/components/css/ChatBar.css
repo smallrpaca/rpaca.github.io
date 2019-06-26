@@ -1,0 +1,42 @@
+.ChatBar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    bottom: 5px;
+    right: 0;
+    /* border-radius: 30px; */
+    background: white;
+    z-index: 3;
+}
+
+.ChatBar .subBar {
+    width: 100%;
+    height: 100%;
+}
+
+.ChatBar .MsgInput {
+    margin-top: 4px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    margin-left: 30px;
+    outline: none;
+}
+
+.ChatBar .MsgInput:focus {
+    border: none;
+}
+
+.ChatBar .btn {
+    position: absolute;
+    border: none;
+    right: 0;
+    bottom: 0;
+    height: 45px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,24 @@
+.sociallink {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.sociallink .desc {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.sociallink span {
+    margin: 20px;
+    cursor: pointer;
+}
+
+@media (max-height: 650px) {
+    .sociallink {
+        display: none;
+    }
+}

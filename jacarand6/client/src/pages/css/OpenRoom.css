@@ -1,0 +1,16 @@
+.OpenRoom {
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    left: 0;
+    bottom: 50px;
+    overflow: scroll;
+}
+
+.OpenRoom::-webkit-scrollbar {
+    width: 5px;
+}
+
+.OpenRoom::-webkit-scrollbar-thumb {
+    background: grey;
+}
