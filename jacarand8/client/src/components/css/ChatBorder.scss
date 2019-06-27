@@ -1,0 +1,62 @@
+@import "component.scss";
+
+@mixin Items {
+    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+@mixin Item {
+    display: inline-block;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+.ChatBorder {
+    @include position(absolute, $top: 45px,$left: 0, $bottom: 60px);
+    @include box_size($width: 100%);
+    overflow-y: scroll;
+    overflow-x: none;
+    background: #1a91a165;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+
+    .ChatList {
+        margin: 0;
+    }
+
+    .ChatItems {
+        @include Items;
+        text-align: start;
+
+        .Item {
+            @include Item;
+            border: 3px solid white;
+            background: white;
+        }
+
+        .Item2 {
+            border: none;
+            background: none;
+        }
+    }
+
+    .MyChatItems {
+        @include Items;
+        text-align: end;
+
+        .MyItem {
+            @include Item;
+            border: 3px solid rgba(255, 0, 234, 0);
+            background: #ffba1b;
+        }
+    }
+}

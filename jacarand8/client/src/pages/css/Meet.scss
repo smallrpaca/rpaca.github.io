@@ -1,0 +1,10 @@
+@import '_Border.scss';
+
+.Meet {
+    @include _Border;
+
+    .MeetDisplay {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin box_size($width: null, $height: null) {
+    width: $width;
+    height: $height;
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin google_font {
+    font-family: 'Sigmar One', cursive;
+}

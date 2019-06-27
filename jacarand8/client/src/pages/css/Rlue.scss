@@ -1,0 +1,10 @@
+@import "_Border.scss";
+
+.Rlue {
+    @include _Border;
+    bottom: 0;
+
+    h3 {
+        margin-left: 25px;
+    }
+}
