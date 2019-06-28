@@ -1,0 +1,36 @@
+@import "component.scss";
+
+.ChatBar {
+    @include position(absolute, $bottom: 5px, $right: 0);
+    @include box_size(100%, 50px);
+    display: flex;
+    flex-direction: row;
+    background: white;
+    z-index: 3;
+
+    .subBar {
+        @include box_size(100%, 100%);
+    }
+
+    .MsgInput {
+        @include box_size(80%, 40px);
+        border: none;
+        margin-top: 4px;
+        margin-left: 30px;
+        font-size: 20px;
+        outline: none;
+
+        &:focus {
+            border: none;
+        }
+    }
+
+    .btn {
+        @include position(absolute, $right: 0, $bottom: 0);
+        @include box_size($height: 45px);
+        border: none;
+        background: none;
+        cursor: pointer;
+        outline: none;
+    }
+}

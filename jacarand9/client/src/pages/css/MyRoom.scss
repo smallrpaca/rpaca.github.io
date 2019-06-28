@@ -1,0 +1,5 @@
+@import "_Border.scss";
+
+.MyRoom {
+    @include _Border;
+}
