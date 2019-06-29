@@ -1,0 +1,9 @@
+@import "../../../components/css/component.scss";
+
+.MeetText {
+    @include position(absolute, $top: 0, $left: 0);
+    @include box_size(100%, 100%);
+}
+
+@media ( min-width: 1000px ) {
+}

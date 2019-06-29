@@ -1,0 +1,30 @@
+@import "component.scss";
+
+.OpenRoomItem {
+    @include box_size($height: 50px);
+    display: flex;
+    flex-direction: row;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+
+    .OpenRoomDesc {
+        @include box_size(100px, 45px);
+        align-self: center;
+        flex-grow: 3;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .name, .tag {
+        text-align: center;
+    }
+
+    .OpenRoomPer {
+        margin-right: 5px;
+        align-self: center;
+        text-align: center;
+    }
+}
