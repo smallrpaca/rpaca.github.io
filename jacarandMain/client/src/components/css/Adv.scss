@@ -1,0 +1,57 @@
+@import "component.scss";
+
+@mixin padding-background($pd: null, $bg: null) {
+    padding: $pd;
+    background: $bg;
+}
+
+.MainAdv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .Adv1 {
+        @include margin($right: auto, $left: auto, $bottom: 10px);
+        @include box_size(728px, 90px);
+        @include padding-background(0, black);
+    }
+
+    .Adv2 {
+        @include position(absolute, $top: 50%, $left: 52%);
+        @include box_size(300px, 250px);
+        @include padding-background(0, red);
+    }
+
+    .Adv3 {
+        @include position(absolute, $top: 77%, $left: 6px);
+        @include box_size(320px, 100px);
+        @include padding-background(0, green);
+    }
+
+    .Adv4 {
+        @include position(absolute, $top: 77%, $left: 360px);
+        @include box_size(320px, 100px);
+        @include padding-background(0, blue);
+        display: none;
+    }
+
+    .Adv5 {
+        @include position(absolute, $top: 50%, $left: 75%);
+        @include box_size(300px, 250px);
+        @include padding-background(0, blue);
+        display:  none;
+    }
+}
+
+@media ( max-width: 600px ) {
+    .Adv2 {
+        display: none;
+    }
+}
+
+@media ( min-width: 1340px ) {
+    .Adv4, .Adv5 {
+        display: inline-block;
+    }
+}
+

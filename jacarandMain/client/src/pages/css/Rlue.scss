@@ -1,0 +1,30 @@
+@import "_Border.scss";
+
+.Rlue {
+    @include _Border;
+    bottom: 0;
+
+    .desc2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .desc3 {
+        background: rgba(0, 0, 255, 0.164);
+        float: right;
+        margin: 20px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-left: 10px;
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+
+}

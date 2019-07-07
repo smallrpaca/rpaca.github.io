@@ -1,0 +1,99 @@
+@import "component.scss";
+
+@mixin checked {
+    background: rgba(0, 0, 0, 0.705);
+    border: none;
+    color: white;
+}
+
+@mixin label {
+    @include box_size(80%, 40px);
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    line-height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    transition: 1.5s all;
+    cursor: pointer;
+}
+
+.MeetBar {
+    @include google_font;
+    @include position(absolute, $top: 6%, $left: 50%);
+    @include box_size(45%, auto);
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    background: rgba(0, 0, 255, 0.158);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+    .SetNickName {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+
+        input[type="text"] {
+            width: 80%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            outline: none;
+            font: {
+                weight: bold;
+                size: 17px;
+            }
+
+            &:focus {
+                border: 3px solid rgba(80, 80, 236, 0.815);
+                outline: none;
+            }
+        }
+    }
+
+    .Gender {
+        font-size: 20px;
+        text-align: center;
+
+        input {
+            display: none;
+        }
+
+        label {
+            @include label;
+        }
+
+        #FemaleInput:checked~ .GenderLabel01 {
+            @include checked;
+        }
+
+        #MaleInput:checked~ .GenderLabel02 {
+            @include checked;
+        }
+    }
+
+    .WishGender {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        input {
+            display: none;
+        }
+
+        label {
+            @include label;
+        }
+
+        #wishFemaleInput:checked~ .wishGenderLabel01 {
+            @include checked;
+        }
+
+        #wishMaleInput:checked~ .wishGenderLabel02 {
+            @include checked;
+        }
+    }
+}
