@@ -1,0 +1,42 @@
+@import "component.scss";
+
+@mixin box {
+  @include box_size(45%, 300px);
+  background: linear-gradient(to top, #990099 0%, #ff99cc 100%);
+  border-radius: 30px;
+  margin: 10px auto 10px;
+  box-shadow: 2px 2px 5px black;
+  text-decoration: none;
+  display: flex;
+}
+
+.MeetSelect {
+  @include google_font;
+  display: flex;
+  flex-direction: row;
+
+  .MeetText {
+    @include position(absolute, $top: 5%, $left: 2%);
+    @include box;
+
+    font-size: 50px;
+  }
+
+  .MeetVoice {
+    @include position(absolute, $top: 30%, $right: 2%);
+    @include box;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  div {
+    align-self: center;
+    color: rgba(255, 255, 255, 0.877);
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+}
