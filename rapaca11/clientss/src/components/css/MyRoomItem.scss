@@ -1,0 +1,34 @@
+@import "component.scss";
+
+/* 메뉴 고정 후 무한 스크롤 */
+.MyRoomItem {
+  @include Item;
+
+  /* 아이콘 component 필요 */
+  .MyRoomImg {
+    margin-left: 10px;
+    align-self: center;
+    flex-grow: 1;
+  }
+
+  /* name 굵게??? */
+  .name {
+    flex-grow: 2;
+    align-self: center;
+  }
+
+  .Chat {
+    @include box_size(100px, 45px);
+    align-self: center;
+    flex-grow: 3;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .GetMsg {
+    margin-right: 5px;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+  }
+}

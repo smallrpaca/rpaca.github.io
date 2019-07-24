@@ -1,0 +1,32 @@
+@import "component.scss";
+
+.FriendItem {
+  @include Item;
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .friendImg {
+    align-self: center;
+  }
+
+  .name {
+    align-self: center;
+  }
+
+  .ChatGo {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 20px;
+
+    div {
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+}

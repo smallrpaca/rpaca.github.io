@@ -1,0 +1,26 @@
+@import "component.scss";
+
+.sociallink {
+  @include position(absolute, $bottom: 20px, $left: 50%);
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  .desc {
+    font-size: 20px;
+    font-weight: bold;
+    // border: 2px solid black;
+    margin: 10px;
+  }
+
+  span {
+    margin: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-height: 645px) {
+  .sociallink {
+    display: none;
+  }
+}

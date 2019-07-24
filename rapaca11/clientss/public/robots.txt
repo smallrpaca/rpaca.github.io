@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+Sitemap: http://jacarand.com/sitemap.xml
+Sitemap: http://www.google.com/ping?sitemap=http://jacarand.com/sitemap.xml

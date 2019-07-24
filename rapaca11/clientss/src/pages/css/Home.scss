@@ -1,0 +1,81 @@
+@import "../../components/css/component.scss";
+
+@mixin back_base_color {
+  background: linear-gradient(to top, #990099 0%, #ff99cc 100%);
+}
+
+.Home {
+  @include position(absolute, $top: 0, $left: 0, $bottom: 0);
+  @include box_size(100%, 100%);
+  display: flex;
+  background: #333333;
+  flex-direction: column;
+
+  .desc1 {
+    @include box_size(100%, 50%);
+
+    .title {
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 10px;
+      color: #ff99cc;
+
+      .sub {
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+
+    .mainPage {
+      margin-left: 25%;
+      margin-top: 10%;
+      //   @include position(flex);
+      @include box_size(50%, 50%);
+
+      .desc {
+        text-align: start;
+        div {
+          margin: 30px;
+          span {
+            margin-left: 20px;
+            color: rgb(224, 224, 224);
+          }
+        }
+        font: {
+          weight: bold;
+          size: 20px;
+        }
+      }
+    }
+  }
+
+  .desc2 {
+    @include box_size(100%, 50%);
+    background: white;
+
+    .start {
+      @include box_size(100%, 100%);
+      background: #333333;
+      .btn {
+        @include box_size(100%, 50%);
+        @include position(absolute, $bottom: 0, $left: 0);
+        background: rgba(0, 0, 0, 0);
+
+        border: none;
+        font-size: 4rem;
+        color: white;
+        transition: 2s all;
+        cursor: pointer;
+
+        &:hover {
+          @include position(absolute, $bottom: 10%, $left: 25%);
+          width: 50%;
+          height: 25%;
+          border-radius: 30px;
+          color: black;
+          background: white;
+        }
+      }
+    }
+  }
+}

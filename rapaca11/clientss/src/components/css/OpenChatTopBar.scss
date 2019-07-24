@@ -1,0 +1,27 @@
+@import "component.scss";
+
+@mixin align {
+  align-self: center;
+  text-align: center;
+}
+
+.OpenChatTopBar {
+  @include google_font;
+  @include position(absolute, $top: 0, $left: 0);
+  @include box_size(100%, 45px);
+  display: flex;
+  flex-direction: row;
+  z-index: 2000;
+  background: #1a91a165;
+  font-size: 20px;
+
+  .RoomOut {
+    @include align;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .name {
+    @include align;
+  }
+}

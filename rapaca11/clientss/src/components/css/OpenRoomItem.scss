@@ -1,0 +1,25 @@
+@import "component.scss";
+
+.OpenRoomItem {
+  @include Item;
+  text-decoration: none;
+
+  .OpenRoomDesc {
+    @include box_size(100px, 45px);
+    align-self: center;
+    flex-grow: 3;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .name,
+  .tag {
+    text-align: center;
+  }
+
+  .OpenRoomPer {
+    margin-right: 5px;
+    align-self: center;
+    text-align: center;
+  }
+}
